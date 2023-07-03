@@ -8,8 +8,8 @@ use MIME::Base64;
 
 $ARGC=@ARGV;
 if ($ARGC !=4) {
-   printf "Você digitou de uma forma errada. Siga as instruções.\n";
-   printf "INSTRUÇÕES - UND3F1N3D\n";
+   printf "Voce digitou de uma forma errada. Siga as instrucoes.\n";
+   printf "INSTRUCOES - UND3F1N3D\n";
    printf "perl $0 <mailist> <remetente\@mail.com> <assunto> <corpo.html>\n";
    printf "Exemplo: perl $0 lista01.txt peu\@msn.com Ola index.html\n";
    exit(1);
