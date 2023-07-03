@@ -47,6 +47,9 @@ sub main {
     open (BANDFIT, "$recipient_file") or die "Não foi possível abrir o arquivo '$recipient_file': $!";
     while (<BANDFIT>) {
         my ($ID, $options) = split(/\|/, $_);
+        if (!defined $options) {
+            die "Erro: A linha lida não contém o caractere '|'. Verifique o conteúdo do arquivo '$recipient_file'.";
+        }
         chop($options);
         push @recipients, $ID;
     }
